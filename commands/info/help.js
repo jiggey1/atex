@@ -85,7 +85,8 @@ module.exports = {
             }),
             reactions: {
                 '⏹': 'delete',
-                '◀': 'previous'
+                '◀': 'previous',
+                '▶': 'next'
             }
         },
         {
@@ -107,7 +108,8 @@ module.exports = {
             }),
             reactions: {
                 '⏹': 'delete',
-                '▶': 'next'
+                '⏪': 'first',
+                '◀': 'previous'
             }
         }
     ], 450000)
