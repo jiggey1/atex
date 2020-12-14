@@ -43,7 +43,8 @@ module.exports = {
             }),
             reactions: {
                 '⏹': 'delete',
-                '▶': 'next'
+                '▶': 'next',
+                '⏩': 'last'
             }
         },
         {
