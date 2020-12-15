@@ -16,7 +16,7 @@ if(!args[0]) {
     const errorEmbed = new MessageEmbed()
     .setTitle("Syntax Error!")
     .setDescription("Correct Usage : >bugreport {Bug Goes Here. Explain in detail.}")
-    return message.channel.send(errorEmbed)
+    return message.channel.send(errorEmbed).then(m => {m.delete ({ timeout: 5000})})
 }
 
 let embed = new MessageEmbed()
