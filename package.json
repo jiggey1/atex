@@ -14,7 +14,6 @@
     "common-tags": "^1.8.0",
     "date-and-time": "^0.14.1",
     "discord.js": "^12.5.1",
-    "discord.js-menu": "^2.2.2",
     "fs": "0.0.1-security",
     "got": "^11.8.1",
     "hastebin": "^0.2.1",
