@@ -23,6 +23,9 @@ module.exports = {
             .setTitle("Fun Commands")
             .addField("``>meme``", "Chooses a completely random post from r/dankmemes")
             .addField("``>tictactoe``", "Play TicTacToe with a friend!")
+            .addField("``>blackjack``", "**__This Is A BETA Command For The Game Blackjack__**")
+            .addField("``>8ball {query}``", "The All Knowing 8Ball")
+            .addField("``>minsweeper {rows} {columns} {bombs}``", "The Classic Game, Minesweeper (** BETA and not even nearly finished. **)")
             .setFooter("More Commands Coming Soon, I Promise | Atex")
             return message.channel.send(funPage)
         }
@@ -58,6 +61,9 @@ module.exports = {
 
 
     }}
+    // Below Is My Old Help Command Code, That Can Happily Rot In Hell (Removing Next Update).
+
+
 
         /*        let helpMenu = new Menu(message.channel, message.author.id, [
         {

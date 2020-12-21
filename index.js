@@ -19,7 +19,7 @@ client.aliases = new Collection();
 });
 
 client.on("ready", async (message, member) => {
-    client.user.setPresence({ activity: { name: '(>help) || v1.1' }, status: 'away' });
+    client.user.setPresence({ activity: { name: '(>help) || v1.1.5' }, status: 'away' });
     console.log("Atex Is Now Online, Below Are Logs and Errors: ");
 
               //This is now the code for member count on Crackingcord

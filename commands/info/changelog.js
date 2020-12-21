@@ -8,8 +8,9 @@ module.exports = {
     run: async (client, message, args) => {
 
         const embed = new MessageEmbed()
-        .setTitle("Changelog | Current Version: 1.1")
+        .setTitle("Changelog | Current Version: 1.1.5")
         .setColor('RANDOM')
+        .addField("v1.1.5:", "- Added Some More Games (8Ball, Blackjack and Minesweeper.). \n- Fixed some typing errors.\n- Cleaned Up My Code.\n")
         .addField("v1.1:", "- Brand New Help Menu \n- Disabled prefix command due to a formatting bug.\n- Cleaned Up My Code Behind The Scene.\n- Added this command and menu.\n- Changed Profile Pic (It means Atex in Japanese).")
         message.channel.send(embed).then(m => {m.delete({ timeout: 20000})})
 
