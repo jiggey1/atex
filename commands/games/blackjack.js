@@ -27,7 +27,7 @@ draw2 = Math.floor(Math.random() * 13);
 if (draw1 > 10) {}
 game = true;
 total = 0;
-message.channel.send("--Commands--\n>blackjack hit - draws new card to add to total\n>blackjack stay - keeps current cards for final amount.\n**This Is A BETA Command.**");
+message.channel.send("--Commands--\n>blackjack hit - draws new card to add to total\n>blackjack stand - keeps current cards for final amount.\n**This Is A BETA Command.**");
 
 if (draw1 > 9 && draw2 > 9) {
     if (draw2 = 10) {
