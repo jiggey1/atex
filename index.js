@@ -1,10 +1,11 @@
-const { Client, Collection, MessageAttachment, Structures } = require("discord.js");
+const { Client, Collection, MessageAttachment, Structures, MessageEmbed } = require("discord.js");
 const config = require("./config.json");
 const fs = require("fs");
 const Canvas = require('canvas');
 const path = require('path');
 const db = require('quick.db');
 const { prefix, token } = require('./config.json');
+const { Stream } = require("stream");
 
 const client = new Client({
     disableEveryone: true,
@@ -19,10 +20,10 @@ client.aliases = new Collection();
 });
 
 client.on("ready", async (message, member) => {
-    client.user.setPresence({ activity: { name: '(>help) || v1.1.5' }, status: 'away' });
+    client.user.setPresence({ activity: { name: '>info' }, status: 'away' });
     console.log("Atex Is Now Online, Below Are Logs and Errors: ");
-
-              //This is now the code for member count on Crackingcord
+          
+    //This is now the code for member count on Crackingcord
               let myGuild = client.guilds.cache.get('656987074196406303');
               let memberCount = myGuild.memberCount;
               let memberCountChannnel  = myGuild.channels.cache.get('756937546688364605');
@@ -112,8 +113,8 @@ client.on('messageDelete', async (message) => {
 
 
 client.on("message", async message => {
-    const prefix = db.get(`guild_${message.guild.id}_prefix`) || ">";
-
+  const prefix = db.get(`guild_${message.guild.id}_prefix`) || ">";
+    
     if (message.author.bot) return;
     if (!message.guild) return;
     if (!message.content.startsWith(prefix)) return;
@@ -129,7 +130,7 @@ client.on("message", async message => {
 
     if (command) 
         command.run(client, message, args);
-        
-});
+    
+      });
 
 client.login(config.token);
