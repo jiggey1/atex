@@ -6,6 +6,11 @@ module.exports = {
     description: "Minesweeper",
     run: async (client, message, args) => {
 
+      message.channel.send("This command has been disabled.").then(m => (m.delete({timout: 5000})))
+    }}
+
+
+      /*
   const rows = parseInt(args[0]);
   const columns = parseInt(args[1]);
   const mines = parseInt(args[2]);
@@ -28,4 +33,4 @@ module.exports = {
   return matrix
     ? message.channel.send(matrix)
     : message.channel.send(':warning: You have provided invalid data.');
-}}
+}}*/

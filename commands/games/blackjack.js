@@ -15,6 +15,10 @@ module.exports = {
     description: "BJ :D",
     run: async (client, message, args) => {
 
+        message.channel.send("This command has been disabled.").then(m => (m.delete({timout: 5000})))
+    }}
+
+        /*
 if(!args[0]) {
 message.channel.send("Starting new game...");
 if (!players.includes(message.author.id)) {
@@ -103,4 +107,4 @@ game = false;
 
 
 
-}}
+}}*/

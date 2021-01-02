@@ -23,9 +23,9 @@ module.exports = {
             .setTitle("Fun Commands")
             .addField("``>meme``", "Chooses a completely random post from r/dankmemes")
             .addField("``>tictactoe``", "Play TicTacToe with a friend!")
-            .addField("``>blackjack``", "**__This Is A BETA Command For The Game Blackjack__**")
+            .addField("``>blackjack`` :warning:", "**__This Is A BETA Command For The Game Blackjack__**")
             .addField("``>8ball {query}``", "The All Knowing 8Ball")
-            .addField("``>minsweeper {rows} {columns} {bombs}``", "The Classic Game, Minesweeper (** BETA and not even nearly finished. **)")
+            .addField("``>minsweeper {rows} {columns} {bombs}`` :warning:", "The Classic Game, Minesweeper (** BETA and not even nearly finished. **)")
             .setFooter("More Commands Coming Soon, I Promise | Atex")
             return message.channel.send(funPage)
         }
@@ -41,6 +41,7 @@ module.exports = {
             .addField("``>invite``", "Sends a link to invite me to your own server (Temporarily)")
             .addField("``>serverinfo``", "This sends current server information.")
             .addField("``>snipe``", "Grabs the latest deleted message from the server, and send it again.")
+            .addField("``>prefix`` :warning:", "Change the bots prefix (defaults to ``>``)")
             .setFooter("Atex by jiggey#4704")
             return message.channel.send(infoPage)
         }
