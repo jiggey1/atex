@@ -25,7 +25,7 @@ module.exports = {
         if (!message.guild.member(client.user).hasPermission('ADD_REACTIONS')) return message.reply('Please add the "ADD_REACTIONS" permission, so I can execute this command <3')
         const sayMessage = args.join(" ");
 
-        if (sayMessage.length < 1) return message.channel.send("Didn't provide a suggestion!")
+        if (sayMessage.length < 1) return message.channel.send("Didn't provide a suggestion!").then(m => {m.delete({ timeout: 5000})})
    
       const embed = new MessageEmbed()
        .setColor(0x00A2E8)
