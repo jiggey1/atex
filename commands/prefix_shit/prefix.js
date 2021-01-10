@@ -1,3 +1,4 @@
+const { MessageEmbed } = require("discord.js")
 const Discord = require('discord.js');
 const db = require('quick.db');
 
@@ -30,6 +31,9 @@ module.exports = {
         return message.channel.send(`The Prefix Has Been Set To ${args[0]}`)
 */
 message.delete()
-message.reply("This command has been temporarily disabled. This was caused because the database isn't saving preferences. This will be fixed shortly, the prefix has been automatically set to ``>`` for every server. Sorry for inconveniences caused.").then(m => {m.delete( {timeout : 10000})})
- }
+        const disableEmbed = new MessageEmbed()
+        .setTitle (":warning: Command Disabled :warning:")
+        .setDescription("This command has been disabled until further notice. Once the bot is migrated to my server, this command will be enabled again. If you had previously set a prefix, it has been reset back to ``>``")
+        message.channel.send(disableEmbed).then(m => (m.delete({ timeout: 20000 })))
+}
 }      

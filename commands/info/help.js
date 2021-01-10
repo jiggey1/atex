@@ -35,7 +35,7 @@ module.exports = {
             .setTitle("Information Commands")
             .addField("``>avatar @user``", "This will grab anyones avatar, and send it to the chat!")
             .addField("``>botinfo``", "This displays the bots information.")
-            .addField("``>bugreport (Bug Goes Here)``", "This command sends your bug directly to me.")
+            .addField("``>bugreport {bug}``", "If you find a bug with my bot, use this command to send a report directly to me.")
             .addField("``>help``", "Sends The Help Menu!")
             .addField("``>changelog``", "This will log every change made to the bot, on new versions.")
             .addField("``>invite``", "Sends a link to invite me to your own server (Temporarily)")

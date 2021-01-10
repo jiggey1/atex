@@ -20,8 +20,8 @@ client.aliases = new Collection();
 });
 
 client.on("ready", async (message, member) => {
-    client.user.setPresence({ activity: { name: '(>help) | v1.1.5', status: 'away' }});
-    console.log("Atex Is Now Online, Below Are Logs and Errors: ");
+    client.user.setPresence({ activity: { name: '(>help) | v1.2', status: 'away' }});
+    console.log(`Atex Is Now Online And Working For ${client.guilds.cache.size} Servers. Below Are Logs and Errors: `);
           
     //This is now the code for member count on Crackingcord
               let myGuild = client.guilds.cache.get('656987074196406303');

@@ -10,7 +10,7 @@ module.exports = {
         message.delete();
     }
 
-    let msg = await message.channel.send("Grabbing avatar from the depths of Discord...").then(m => {m.delete({ timeout: 1500 })});
+    let msg = await message.channel.send("Scanning the interweebs for that picture... (this could take some time)").then(m => {m.delete({ timeout: 1500 })});
 
     let mentionedUser = message.mentions.users.first() || message.author;
 

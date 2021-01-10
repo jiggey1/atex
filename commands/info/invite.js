@@ -10,5 +10,5 @@ module.exports = {
         .setTitle("Invite This Bot To Your Server Too!")
         .setDescription("https://discord.com/oauth2/authorize?client_id=785555552256262174&scope=bot&permissions=8")
         .setFooter("Permissions Required : Administrator")
-        message.channel.send(embed).then(message => {message.delete({ timeout:20000})})
+        message.channel.send(embed)
     }}
