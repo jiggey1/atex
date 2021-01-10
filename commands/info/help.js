@@ -14,19 +14,22 @@ module.exports = {
             .addField("``>help fun``", "This displays the \"Fun\" commands.")
             .addField("``>help info``", `This displays the "Information" commands.`)
             .addField("``>help moderation``", "This shows staff only commands.")
-            .setFooter("Remember to replace '>' for you custom prefix, if you have chosen one. | Atex")
+            .setFooter("If A Command Has A Warning Sign, It Is Disabled. | Atex")
             return message.channel.send(pageOne)
         }
 
         if(args[0] == "fun") {
             const funPage = new MessageEmbed()
             .setTitle("Fun Commands")
+            .addField("``>hangman``", "Play A Game Of Hangman!")
+            .addField("``>pokemon``", "Play Guess The Pokemon!")
+            .addField("``>akinator``", "Play The Akinator Game!")
             .addField("``>meme``", "Chooses a completely random post from r/dankmemes")
             .addField("``>tictactoe``", "Play TicTacToe with a friend!")
-            .addField("``>blackjack`` :warning:", "**__This Is A BETA Command For The Game Blackjack__**")
+            //.addField("``>blackjack`` :warning:", "**__This Is A BETA Command For The Game Blackjack__**")
             .addField("``>8ball {query}``", "The All Knowing 8Ball")
-            .addField("``>minsweeper {rows} {columns} {bombs}`` :warning:", "The Classic Game, Minesweeper (** BETA and not even nearly finished. **)")
-            .setFooter("More Commands Coming Soon, I Promise | Atex")
+            //.addField("``>minsweeper {rows} {columns} {bombs}`` :warning:", "The Classic Game, Minesweeper (** BETA and not even nearly finished. **)")
+            .setFooter("More Commands Coming Soon | Atex")
             return message.channel.send(funPage)
         }
 

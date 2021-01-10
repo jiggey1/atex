@@ -27,7 +27,7 @@ let embed = new MessageEmbed()
 .addField("Reported in", guild)
 .setColor("#f49542")
 
-message.channel.send("**| Your bug has been reported to Atex's developers. It will be reviewed, and hopefully resolved soon. Please be patient. We thank you for improving Atex. |**").then(m => {m.delete({ timeout: 5000})})
+message.channel.send("**| Your bug has been reported to Atex's developers. It will be reviewed, and hopefully resolved soon. Please be patient. We thank you for improving Atex. |**").then(m => {m.delete({ timeout: 10000})})
 channel.send(embed).then(i => i.react("⏳"))
 
   
