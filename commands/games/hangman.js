@@ -1,5 +1,5 @@
 const Discord = require('discord.js'); // Require discord.js
-const HangmanGame = require('hangcord'); // Require HangmanGame
+//const HangmanGame = require('hangcord'); // Require HangmanGame
 
 module.exports = {
     name: "hangman",
@@ -7,7 +7,7 @@ module.exports = {
     description: "Play Hangman",
     run: async (client, message, args) => {
 
-const hangman = new HangmanGame({
+/*const hangman = new HangmanGame({
     title: 'Hangman', 
     color: 'RANDOM', 
     timestamp: true,
@@ -16,6 +16,6 @@ const hangman = new HangmanGame({
   });
 
   hangman.newGame(message);
-    
+    */ message.channel.send("Sorry, this command has been disabled due to technical difficulties.").then(m => (m.delete({ timeout: 5000 })))
 
 }}
