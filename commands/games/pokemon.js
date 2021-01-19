@@ -12,7 +12,7 @@ if (!pokemon) return message.channel.send("Opps! Something went wrong :(");
 const filter = m => m.author.id === message.author.id;
 
 const embed = new MessageEmbed()
-    .setAuthor("Guess the pokemon")
+    .setAuthor("Guess the pokemon in under 20 seconds!")
     .setColor("#FFFF00")
     .setImage(pokemon.imageURL);
 
@@ -21,7 +21,7 @@ await message.channel.send(embed);
 message.channel.awaitMessages(filter, {
     max: 1,
     error: ["time"],
-    time: 15000
+    time: 20000
 })
 .then(collected => {
     const m = collected.first();

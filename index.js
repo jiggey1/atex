@@ -114,7 +114,7 @@ client.on('messageDelete', async (message) => {
 
 client.on("message", async message => {
   const prefix = db.get(`guild_${message.guild.id}_prefix`) || ">";
-    
+
     if (message.author.bot) return;
     if (!message.guild) return;
     if (!message.content.startsWith(prefix)) return;

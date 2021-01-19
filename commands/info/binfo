@@ -7,7 +7,7 @@ module.exports = {
     aliases: ["binfo"],
     description: "Sends Bot Information",
     run: async (client, message, args) => {
-
+        
             let usersize = client.users.cache.size
             let chansize = client.channels.cache.size
             let uptimxd = client.uptime 

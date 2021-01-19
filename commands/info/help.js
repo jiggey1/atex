@@ -37,7 +37,7 @@ module.exports = {
             const infoPage = new MessageEmbed()
             .setTitle("Information Commands")
             .addField("``>avatar @user``", "This will grab anyones avatar, and send it to the chat!")
-            .addField("``>botinfo``", "This displays the bots information.")
+            .addField("``>botinfo :warning:``", "This displays the bots information. (Currently Disabled).")
             .addField("``>bugreport {bug}``", "If you find a bug with my bot, use this command to send a report directly to me.")
             .addField("``>help``", "Sends The Help Menu!")
             .addField("``>changelog``", "This will log every change made to the bot, on new versions.")
